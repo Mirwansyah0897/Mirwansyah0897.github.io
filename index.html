@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Survey Form</title>
+</head>
+<body>
+
+<h1 id="title">Blackpink Survey Form</h1>
+<p id="description">Thank you for your help BLINK.</p>
+
+	<div class="container">
+		<form id="survey-form">
+			<!-- start for field for name, email and age -->
+			<fieldset> 
+				<label for="name" id="name-label"> Name :
+					<input type="text" name="name" id="name" placeholder="Enter your name" required> 
+				</label>
+				<label for="email" id="email-label"> Email :
+					<input type="email" name="email" id="email" placeholder="Enter your email" required> 
+				</label>
+				<label for="number" id="number-label"> Age <span class="clue">(Optional)</span> :
+					<input type="number" name="number" id="number" min="17" max="45" placeholder="Enter your age">
+				</label>
+			</fieldset>
+			<!-- end field -->
+			<!-- start for field favorite member -->
+			<fieldset>
+				<label>Who is your favorite member?
+					<label for="jennie">
+						<input class="inline" type="radio" name="member" id="jennie" value="1"> Jennie
+					</label>
+					<label for="jisoo">
+						<input class="inline" type="radio" name="member" id="jisoo" value="2"> Jisoo
+					</label>
+					<label for="lisa">
+						<input class="inline" type="radio" name="member" id="lisa" value="3"> Lisa
+					</label>
+					<label for="rose">
+						<input class="inline" type="radio" name="member" id="rose" value="4"> Rose
+					</label>
+				</label>
+			</fieldset>
+			<!-- end field -->
+			<!-- start field for select option -->
+			<fieldset>
+				<label>
+					Would you recommend Blackpink to a friend?
+					<select id="dropdown" name="dropdown">
+						<option value="">Select option</option>
+						<option value="1">Yes</option>
+						<option value="2">No</option>
+					</select>
+				</label>
+			</fieldset>
+			<!-- end field -->
+			<!-- start field for album -->
+			<fieldset>
+				<label>
+					Please choose your favorite album(s)
+					<label for="bornpink">
+						<input class="inline" type="checkbox" name="bornpink" value="1" id="bornpink"> BORN PINK
+					</label>
+					<label for="the-album">
+						<input class="inline" type="checkbox" name="the-album" value="2" id="the-album"> THE ALBUM
+					</label>
+					<label for="ice-cream">
+						<input class="inline" type="checkbox" name="ice-cream" value="3" id="ice-cream"> Ice Cream (with Selena Gomes)
+					</label>
+					<label for="how-you-like-that">
+						<input class="inline" type="checkbox" name="how-you-like-that" value="4" id="how-you-like-that"> HOW YOU LIKE THAT
+					</label>
+					<label for="kill-this-love">
+						<input class="inline" type="checkbox" name="kill-this-love" value="5" id="kill-this-love"> KILL THIS LOVE
+					</label>
+				</label>
+			</fieldset>
+			<!-- end field -->
+			<!-- text area & submit button -->
+			<fieldset>
+				<label for="comment">
+					Any comments or suggestions?
+					<textarea id="comment" placeholder="Comments or suggestions ..."></textarea>
+				</label>
+				<button type="submit" name="submit" id="submit">Submit</button>
+			</fieldset>
+			<!-- end field -->
+		</form>
+	</div>
+</body>
+</html>
